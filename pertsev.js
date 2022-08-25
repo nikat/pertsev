@@ -1,3 +1,4 @@
+window.addEventListener ("load", function() {
 var s = document.getElementsByTagName("strong");
 for(var i = 0; i < s.length; i++){
    if (s[i].innerText.includes("Андрей Перцев")) {
@@ -5,3 +6,4 @@ for(var i = 0; i < s.length; i++){
     break;
    }
 }
+});
