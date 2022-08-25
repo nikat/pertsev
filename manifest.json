@@ -1,7 +1,7 @@
 {
     "name": "Pertsev",
     "description": "Помечаем статьи Андрея Перцева на сайте Медузы",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "manifest_version": 3,
     "content_scripts": [
         {
