@@ -1,7 +1,12 @@
 {
-    "name": "No Pertsev",
-    "description": "Убираем статьи Андрея Перцева с сайта Медузы",
+    "name": "Pertsev",
+    "description": "Помечаем статьи Андрея Перцева на сайте Медузы",
     "version": "0.0.1",
     "manifest_version": 3,
-    "permissions": ["activeTab", "scripting"]
+    "content_scripts": [
+        {
+            "js": ["pertsev.js"],
+            "matches": ["https://meduza.io/*"]
+        }
+    ]
 }
