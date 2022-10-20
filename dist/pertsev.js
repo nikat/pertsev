@@ -1,10 +1,17 @@
 mark = function() {
    try {
-      if (! document.getElementsByTagName("h1")[0].textContent.includes("Андрей Перцев") ) {
+      headersList = document.getElementsByTagName("h1")
+      for (i in headersList) {
+         if (headersList[i].checkVisibility()) {
+            articleHeader = headersList[i];
+            break;
+         }
+      }
+      if (! articleHeader.textContent.includes("Андрей Перцев") ) {
          var s = document.getElementsByTagName("strong");
          for (i in s) {
             if (s[i].innerText.includes("Андрей Перцев")) {
-               document.getElementsByTagName("h1")[0].innerHTML += '<span style="color:red"> — Андрей Перцев</span>'
+               articleHeader.innerHTML += '<span style="color:red"> — Андрей Перцев</span>'
                break;
             }
          }
